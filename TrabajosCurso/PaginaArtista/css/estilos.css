@@ -1,0 +1,22 @@
+body{
+	padding: 5vw;
+	font-family: Sacramento;
+	font-size: 2vw;
+	text-align: justify;
+	color: silver;
+	background: black;
+}
+h1, h2{
+	font-family: Raleway;
+	font-size: 3vw;
+	color: white;
+}
+h1{
+	text-align: center;
+}
+h2{
+	text-align: left;
+}
+span{
+	color: #7F7F7F
+}

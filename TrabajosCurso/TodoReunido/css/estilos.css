@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+	background-color: #2F2F2F;
+}
+nav div{
+	margin-bottom: 30px;
+	width: 100%;
+	background-color: #B0B0B0;
+	height: 110px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+}
+
+#menu{
+	margin: 6px;
+	width: 100%;
+	background-color: #B0B0B0;
+	height: 51px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+}
+h1, h2{
+	display: block;
+	font-size: 40px;
+	font-family: 'Righteous', cursive;
+	margin: 5px 80px 0 8px;
+	padding-top: 20px;
+}
+h2{
+	text-align: left; 
+	font-size: 20px;
+	padding-top: 5px;
+	margin-bottom: 5px: 
+}
+#promocion{
+	background-image: url('../img/videojuegos.png');
+	width: 65%;
+	height: 33vw;
+	background-position: center;
+  	background-repeat: no-repeat; 
+}
+#promocion:hover{
+	background-image: url('../img/videojuegosLuz.png');
+	
+}
+
+img{
+	display: block;
+	margin: auto;
+	width: 80%;
+	height: 90%;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+#login{
+	position: absolute;
+	width: 25%;
+	background-color: #B0B0B0;
+	right: 5vw;
+	top: 50%;
+	transform: translateY(-35%);
+	padding: 20px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+}
+label, input{
+	font-family: 'Righteous', cursive;
+	font-size: 18px;
+}
+label{
+	display: block;
+	margin: auto;
+	padding: 5px;
+	width: 75%;
+}
+
+input{
+	display: block;
+	margin: auto;
+	padding: 10px 20px;
+	width: 75%;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: solid 1px black;
+	background-color: #EAEAEA;
+}
+
+nav ul{
+	list-style:none;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+nav ul li {
+	background-color: #B0B0B0;
+	position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a{
+	display: block;
+    text-decoration: none;
+    color: black;
+	padding: 14px 10px;
+	box-sizing: border-box;
+	font-family: 'Righteous', cursive;
+	font-size: 18px;
+}
+
+nav ul li:hover{
+	 background-color: #C4C4C4;
+	 padding-bottom: 2px;
+}
+
+nav ul ul{
+	display: none;
+	position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+nav ul ul li{
+	float: none;
+    width: 150px;
+}
+
+nav ul ul li a{
+    padding:10px 15px;
+}
+
+nav ul li:hover > ul {
+    display:block;
+}
+
+#inicio{
+	font-size: 35px;
+    padding: 4px 200px 4px 20px;
+}
+
+#inicio:hover{
+	font-size: 35px;
+    padding: 4px 200px 6px 20px;
+}
+
+#NUser{
+	float: right;
+	margin-right: 30px: 
+}
+
+.submenu li{
+	display: block;
+}
+
+input[type=button]{
+	position: relative;
+	padding: 5px;
+	margin: 10px 2px 10px 0;
+	width: 75%;
+	border: solid 1px black;
+	background-color: #7864C4; 
+	box-sizing: border-box;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	font-size: 15px;
+}
+
+#error{
+	margin-left: 40px;
+	color: red;
+}

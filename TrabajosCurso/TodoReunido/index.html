@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="text/css" href="img/videojuegos.png">
+</head>
+<body>
+	<nav>
+		<div>
+			<h1>T-Crazture</h1>	
+			<h2 style="text-align: right: ">Tel: 3114714320</h2>
+		</div>
+	</nav>
+	<div id="promocion">
+		<img src="img/Fondo.png">
+	</div>
+	<div id="login">
+		<form method="POST">
+			<label type="text" name="user" >Usuario</label>
+			<input id="usuario" type="text" name="user" placeholder="Digite su usuario" required="">
+			<label type="text" name="password">Contrasena</label>
+			<input id="password" type="password" name="password" placeholder="Digite su contraseña" required="">
+			<input onclick="ValidarUsuario()" type="button" value="Iniciar">
+			<span id="error"></span>
+		</form>
+		<label type="text">----------- O -----------</label>
+		<form action="User.html" method="post">
+			<label type="text" name="user" value="">Usuario</label>
+			<input type="text" name="user" placeholder="Digite su usuario" required="">
+			<label type="text" name="password" value="">Contrasena</label>
+			<input type="password" name="password" placeholder="Digite su contraseña" required="">
+			<label type="text" name="correo" value="">Correo</label>
+			<input type="email" name="correo" placeholder="Digite su correo" required="">
+			<label type="text" name="fechaNacimiento" value="">Fecha de nacimiento</label>
+			<input type="date" name="fechaNacimientoec" placeholder="Fecha de nacimiento">
+			<label type="text" name="ciudad" value="">Ciudad</label>
+			<input type="text" name="ciudad" placeholder="Ciudad">
+			<input type="button" value="Registrate">
+		</form>
+	</div>
+	<script language="javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/funciones.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
