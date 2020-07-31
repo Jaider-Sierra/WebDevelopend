@@ -44,14 +44,20 @@ h2{
 
 #juego1 , #juego2{
 	display: none;
-	width: 65%;
+	margin: 100px 40px 40px 40px;
+	width: 40%;
 	height: 33vw;
+	background-color: #B0B0B0;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 	background-position: center;
   	background-repeat: no-repeat; 
 }
+
+#juego1 h1, #juego2 h1{
+	margin: auto;
+}
 #promocion:hover{
 	background-image: url('../img/videojuegosLuz.png');
-	
 }
 
 img{
