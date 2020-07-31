@@ -51,7 +51,6 @@ function RegistroUsuario(){
 	}else {
 		numeroUsuario++;
 		cantidadUsuarios++;	
-		console.log(numeroUsuario + " " + cantidadUsuarios);
 		usuarios[numeroUsuario] = new Array(5);
 		for (var i = 0; i < 6; i++) {
 			usuarios[numeroUsuario][i] = dato[i];
@@ -99,4 +98,16 @@ function CerrarSesion(){
 
 	document.getElementById("usuarioLogin").value = "";
 	document.getElementById("passwordLogin").value = "";
+}
+
+function MostrarJuego1(){
+	document.getElementById("juego2").style.display = "none";
+	document.getElementById("juego1").style.display = "block";
+	document.getElementById("promocion").style.display = "none";
+}
+
+function MostrarJuego2(){
+	document.getElementById("juego1").style.display = "none";
+	document.getElementById("juego2").style.display = "block";
+	document.getElementById("promocion").style.display = "none";
 }

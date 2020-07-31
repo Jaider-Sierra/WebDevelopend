@@ -41,6 +41,14 @@ h2{
 	background-position: center;
   	background-repeat: no-repeat; 
 }
+
+#juego1 , #juego2{
+	display: none;
+	width: 65%;
+	height: 33vw;
+	background-position: center;
+  	background-repeat: no-repeat; 
+}
 #promocion:hover{
 	background-image: url('../img/videojuegosLuz.png');
 	
