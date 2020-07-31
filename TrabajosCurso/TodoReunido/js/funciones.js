@@ -96,4 +96,7 @@ function CerrarSesion(){
 	document.getElementById("correoRegistro").value = "";
 	document.getElementById("fechaNacimientoRegistro").value = "";
 	document.getElementById("ciudadRegistro").value = "";
+
+	document.getElementById("usuarioLogin").value = "";
+	document.getElementById("passwordLogin").value = "";
 }
