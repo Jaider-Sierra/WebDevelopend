@@ -1,8 +1,15 @@
+<?php 
+	include ("validar.php");
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Imagine Dragons</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="/css/alertify.min.css" />
+	<link rel="stylesheet" href="/css/themes/default.min.css" />
+ 	<script src="alertify.min.js"></script>
 </head>
 	<body>
 		<h1>Imagine Dragons</h1>
@@ -44,8 +51,9 @@
 				<input id="apellido" type="text" name="" value="">
 			</form>
 			 -->
-			<button onclick="Confirmar()">Confirmar</button>
-			<button onclick="MostrarError()">Enviar</button>
+			<form>
+				<input onclick="MostrarAlerta()" type="submit" name="Enviar">
+			</form>
 		
 		<script src="js.js" type="text/javascript" charset="utf-8" async defer></script>
 

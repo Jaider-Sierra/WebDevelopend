@@ -10,7 +10,21 @@
 </head>
 <body>
 	<nav>
-		<div>
+		<div id="menu">
+			<ul>
+				<li><a href="User.html" id="inicio">T-Crazture</a></li>
+				<li><a href="">Juegos</a>
+					<ul>
+						<li><a href="">Juego 1</a></li>
+						<li><a href="">Juego 2</a></li>
+					</ul>
+				</li>	
+				<li><a href="">Nosotros</a></li>
+				<li><a href="">Contactenos</a></li>
+				<li id="NUser"><button onclick="CerrarSesion()" type="button">Cerrar Sesion</button></li>
+			</ul>
+		</div>
+		<div id="nav1">
 			<h1>T-Crazture</h1>	
 			<h2 style="text-align: right: ">Tel: 3114714320</h2>
 		</div>
@@ -19,28 +33,36 @@
 		<img src="img/Fondo.png">
 	</div>
 	<div id="login">
-		<form method="POST">
+		<form>
 			<label type="text" name="user" >Usuario</label>
-			<input id="usuario" type="text" name="user" placeholder="Digite su usuario" required="">
+			<input id="usuarioLogin" type="text" name="user" placeholder="Digite su usuario" required="">
 			<label type="text" name="password">Contrasena</label>
-			<input id="password" type="password" name="password" placeholder="Digite su contraseña" required="">
+			<input id="passwordLogin" type="password" name="password" placeholder="Digite su contraseña" required="">
 			<input onclick="ValidarUsuario()" type="button" value="Iniciar">
 			<span id="error"></span>
 		</form>
 		<label type="text">----------- O -----------</label>
-		<form action="User.html" method="post">
+		<form>
 			<label type="text" name="user" value="">Usuario</label>
-			<input type="text" name="user" placeholder="Digite su usuario" required="">
+			<input id="usuarioRegistro" type="text" name="user" placeholder="Digite su usuario" required="">
 			<label type="text" name="password" value="">Contrasena</label>
-			<input type="password" name="password" placeholder="Digite su contraseña" required="">
+			<input id="passwordRegistro" type="password" name="password" placeholder="Digite su contraseña" required="">
 			<label type="text" name="correo" value="">Correo</label>
-			<input type="email" name="correo" placeholder="Digite su correo" required="">
+			<input id="correoRegistro" type="email" name="correo" placeholder="Digite su correo" required="">
 			<label type="text" name="fechaNacimiento" value="">Fecha de nacimiento</label>
-			<input type="date" name="fechaNacimientoec" placeholder="Fecha de nacimiento">
+			<input id="fechaNacimientoRegistro" type="date" name="fechaNacimientoec" placeholder="Fecha de nacimiento">
 			<label type="text" name="ciudad" value="">Ciudad</label>
-			<input type="text" name="ciudad" placeholder="Ciudad">
-			<input type="button" value="Registrate">
+			<input id="ciudadRegistro" type="text" name="ciudad" placeholder="Ciudad">
+			<input onclick="RegistroUsuario()" type="button" value="Registrate">
+			<span id="error2"></span>
 		</form>
+	</div>
+	<div id="info">
+		<h2>Datos</h2>
+		<label id="nombreMostrar">Nombre:</label>
+		<label id="correoMostrar">correo:</label>
+		<label id="fechaNMostrar">Fecha de nacimiento:</label>
+		<label id="ciudadMostrar">Ciudad:</label>
 	</div>
 	<script language="javascript" src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/funciones.js" type="text/javascript" charset="utf-8" async defer></script>

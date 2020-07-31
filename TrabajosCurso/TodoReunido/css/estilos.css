@@ -13,6 +13,7 @@ nav div{
 }
 
 #menu{
+	display: none;
 	margin: 6px;
 	width: 100%;
 	background-color: #B0B0B0;
@@ -64,6 +65,29 @@ img{
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 	border-radius: 5px;
 }
+
+#info{
+	display: none;
+	position: absolute;
+	width: 25%;
+	background-color: #B0B0B0;
+	right: 5vw;
+	top: 50%;
+	transform: translateY(-35%);
+	padding: 20px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+	border-radius: 5px;
+}
+
+#info label{
+	font-family: 'Righteous', cursive;
+	font-size: 18px;
+	display: block;
+	margin: auto;
+	padding: 5px;
+	width: 75%;
+	border-bottom: solid 1px black;
+}
 label, input{
 	font-family: 'Righteous', cursive;
 	font-size: 18px;
@@ -100,7 +124,7 @@ nav ul li {
     padding:0;
 }
 
-nav ul li a{
+nav ul li a , button{
 	display: block;
     text-decoration: none;
     color: black;
@@ -148,7 +172,7 @@ nav ul li:hover > ul {
 
 #NUser{
 	float: right;
-	margin-right: 30px: 
+	margin-right: 100px: 
 }
 
 .submenu li{
@@ -168,7 +192,7 @@ input[type=button]{
   	font-size: 15px;
 }
 
-#error{
+#error, #error2{
 	margin-left: 40px;
 	color: red;
 }
